@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="img/logo.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>StorySharing | Share</title>
+	</head>
+	<body>
+		<div class="background-container">
+			<div class="background"></div>
+		</div>
+		<header>
+			<div class="nav-panel">
+				<div class="width-container relative-right">
+					<div class="flex-justified">
+						<a href="home.html" class="logo">StorySharing</a>
+						<div class="user-group">
+							<p class="user-name">Name</p>
+							<div class="user-icon"></div>
+							<div class="user-menu">
+								<a>Invite Member</a>
+								<a href="profile-settings.html" tabindex="-1">Profile Settings</a>
+								<a>Sign Out</a>
+							</div>
+						</div>
+					</div>
+					<nav class="site-menu">
+						<a href="home.html">Home</a>
+						<a href="share-story.html" class="current-page">Share Story</a
+						><!-- <a href="">Admin:NO</a> -->
+						<a href="about.html">About Us</a>
+					</nav>
+				</div>
+			</div>
+			<div class="showcase showcase-lower">
+				<h2 class="main-title">What's Your Story Today?</h2>
+			</div>
+		</header>
+		<main class="content-background width-container">
+			<form action="" class="share-story-form form-bg">
+				<h2 class="share-post-title">Share Story</h2>
+				<label for="title">Title</label>
+				<input type="text" name="title" id="title" />
+				<label for="story">Story</label>
+				<textarea name="story" id="story" class="textarea"></textarea>
+				<small class="error-msg">No story to share</small>
+				<div class="add-img-group">
+					<div class="add-img-input-container">
+						<label for="post-img" class="btn btn-1 file-input-overlay-btn">Add image</label>
+						<input type="file" name="post-img" id="post-img" accept="image/*" />
+					</div>
+					<!-- <div class="post-img-icon"></div>
+					<span class="added-file-name">fileName.jpg</span> -->
+				</div>
+				<div class="checkbox-group">
+					<label for="notify">Notify Everybody</label>
+					<input type="checkbox" name="" id="notify" checked tabindex="-1" />
+				</div>
+				<input type="submit" class="btn btn-2 share-story-submit-btn" value="Share Story" />
+			</form>
+		</main>
+		<footer class="footer-noMargin">
+			<div class="width-container flex-justified">
+				<a href="home.html" class="logo-small">StorySharing</a>
+				<span>Copyright &copy; 2024 StorySharing</span>
+			</div>
+		</footer>
+	</body>
+</html>

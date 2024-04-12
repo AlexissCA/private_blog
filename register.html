@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height-page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="img/logo.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>StorySharing | Register</title>
+	</head>
+	<body class="full-height-page">
+		<div class="background-container">
+			<div class="background"></div>
+		</div>
+		<div class="center-on-page">
+			<div class="auth-container">
+				<div class="auth-logo-container">
+					<h1 class="auth-logo">StorySharing</h1>
+				</div>
+				<form action="" class="auth-form">
+					<label for="email">Email</label>
+					<input id="email" type="email" name="email" autocomplete="email" minlength="5" />
+					<small class="error-msg">Error</small>
+					<label for="username">Username<span class="info">3-20 characters</span></label>
+					<input id="username" type="text" name="username" minlength="3" maxlength="20" />
+					<small class="error-msg">Error</small>
+					<label for="password">Password<span class="info">3-20 characters, 1 special character, 1 number</span></label>
+					<div class="password-group">
+						<input id="password" type="password" name="password" minlength="3" maxlength="20" />
+						<svg class="password-display-icon"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
+					</div>
+					<small class="error-msg">Error</small>
+					<label for="password-2">Confirm Password</label>
+					<div class="password-group">
+						<input id="password-2" type="password" name="password-2" minlength="3" maxlength="20" />
+						<svg class="password-display-icon"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
+					</div>
+					<small class="error-msg">Error</small>
+					<div class="checkbox-group">
+						<label for="remember">Remember me</label><input id="remember" type="checkbox" name="remember" tabindex="-1" checked />
+					</div>
+					<input class="btn btn-1 auth-submit-btn" type="submit" value="Register" />
+				</form>
+				<div class="auth-change">
+					<button class="btn btn-2 auth-change-btn"><a href="index.html" tabindex="-1">Login</a></button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

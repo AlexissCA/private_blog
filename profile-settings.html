@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="img/logo.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>StorySharing | Profile Settings</title>
+	</head>
+	<body>
+		<div class="background-container">
+			<div class="background"></div>
+		</div>
+		<header>
+			<div class="nav-panel">
+				<div class="width-container relative-right">
+					<div class="flex-justified">
+						<a href="home.html" class="logo">StorySharing</a>
+						<div class="user-group">
+							<p class="user-name">Name</p>
+							<div class="user-icon"></div>
+							<div class="user-menu">
+								<a>Invite Member</a>
+								<a href="profile-settings.html" tabindex="-1">Profile Settings</a>
+								<a>Sign Out</a>
+							</div>
+						</div>
+					</div>
+					<nav class="site-menu">
+						<a href="home.html">Home</a>
+						<a href="share-story.html">Share Story</a
+						><!-- <a href="">Admin:NO</a> -->
+						<a href="about.html">About Us</a>
+					</nav>
+				</div>
+			</div>
+			<div class="showcase showcase-lower">
+				<h2 class="main-title">What's Your Story Today?</h2>
+			</div>
+		</header>
+		<main class="content-background width-container">
+			<form action="" class="profile-settings form-bg">
+				<h3 class="profile-settings-title">Profile Settings</h3>
+				<div>
+					<label for="user-img-input">Change Profile Picture</label
+					><!-- Add Profile Picture -->
+					<div class="file-input-container">
+						<input type="file" id="user-img-input" class="user-img-input" name="user-img" accept="image/*" tabindex="-1" />
+						<div class="current-image"></div>
+						<!-- <svg class="current-image default-icon"><use xlink:href="img/sprite.svg#icon-user"></use></svg> -->
+					</div>
+				</div>
+				<hr class="line-separator-light" />
+				<label for="change-user-color">Change Profile Color</label>
+				<input type="color" id="change-user-color" class="change-user-color" name="user-color" tabindex="-1" />
+				<hr class="line-separator-light" />
+				<label for="change-username">Change Username<span class="info">3-20 characters</span></label>
+				<input type="text" id="change-username" name="username" minlength="3" maxlength="20" />
+				<hr class="line-separator-light m-big" />
+				<label for="change-description">Change User Description</label>
+				<textarea id="change-description" class="textarea" name="user-description"></textarea>
+				<hr class="line-separator-strong" />
+				<h4 class="title-small">Change Password</h4>
+				<label for="old-password">Old Password</label>
+				<div class="password-group">
+					<input type="password" id="old-password" name="old-password" minlength="3" maxlength="20" />
+					<svg class="password-display-icon"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
+				</div>
+				<small class="error-msg">Error</small>
+				<label for="new-password">New Password <span class="info block">3-20 characters, 1 special character, 1 number</span></label>
+				<div class="password-group">
+					<input type="password" id="new-password" name="new-password" minlength="3" maxlength="20" />
+					<svg class="password-display-icon"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
+				</div>
+				<small class="error-msg">Error</small>
+				<label for="new-password-2">Confirm New Password</label>
+				<div class="password-group">
+					<input type="password" id="new-password-2" name="new-password-2" minlength="3" maxlength="20" />
+					<svg class="password-display-icon"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
+				</div>
+				<small class="error-msg">Error</small>
+				<hr class="line-separator-strong m-big" />
+				<div class="checkbox-group">
+					<input type="checkbox" id="notify me" checked />
+					<label for="notify me">Notify me</label>
+				</div>
+				<input type="submit" class="btn btn-2 save-profile-settings-btn" value="Save Changes" />
+			</form>
+		</main>
+		<footer class="footer-noMargin">
+			<div class="width-container flex-justified">
+				<a href="home.html" class="logo-small">StorySharing</a>
+				<span>Copyright &copy; 2024 StorySharing</span>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{
+	"name": "story_sharing",
+	"version": "1.0.0",
+	"description": "private blog to share stories with friends",
+	"main": "index.js",
+	"scripts": {
+		"watch:sass": "node-sass scss/main.scss css/style.css -w"
+	},
+	"author": "Alexiss",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^9.0.0"
+	}
+}
